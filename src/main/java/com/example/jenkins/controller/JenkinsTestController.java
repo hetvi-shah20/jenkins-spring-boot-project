@@ -13,4 +13,9 @@ public class JenkinsTestController {
     public List<String> getBenefitsOfJenkins(){
        return Arrays.asList("Open source and free","Jenkins saves developers a significant amount of time in the product building process, as the entire process is automated","There is no need to manually perform tests and wait for test results, so this saves a lot of time and ultimately money for the company.");
     }
+
+    @GetMapping("/make-jar-files")
+    public String makeJarFiles(){
+        return "This will give you a jar file in target folder";
+    }
 }
